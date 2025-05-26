@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <h2>User Dashboard</h2>
+    <p>Welcome, {{ session.get('username') }}!</p>
+    <p>This is your protected dashboard. Only logged-in users can see this.</p>
+    <p>Your role is: {{ session.get('role') }}</p>
+{% endblock %}

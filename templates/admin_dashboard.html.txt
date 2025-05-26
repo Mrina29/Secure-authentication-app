@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+    <h2>Admin Dashboard</h2>
+    <p>Welcome, Admin {{ session.get('username') }}!</p>
+    <p>This page is only accessible to users with the 'admin' role.</p>
+    <p>Here you could manage users, settings, etc.</p>
+{% endblock %}
